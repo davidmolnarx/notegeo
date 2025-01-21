@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "NoteGeo",
+    "slug": "NoteGeo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#25292e"
+    },
+    "plugins": [
+      "expo-build-properties",
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "googleServicesFile": "./ios/GoogleService-Info.plist",
+      "supportsTablet": true,
+      "runtimeVersion": "1.0.0",
+      "bundleIdentifier": "com.anonymous.NoteGeo"
+    },
+    "android": {
+      "googleServicesFile": "./android/app/google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.NoteGeo",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "dcadeea9-5398-4fa9-a268-22deefa2ece8"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/dcadeea9-5398-4fa9-a268-22deefa2ece8"
+    }
+  }
+}
